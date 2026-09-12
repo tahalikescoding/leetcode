@@ -1,4 +1,4 @@
-
+#ARMSTRONG NUM
 class Soltuion:
     def isarmstrong(self , x:int)->bool:
         num = x
