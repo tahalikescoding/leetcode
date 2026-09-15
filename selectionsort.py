@@ -1,0 +1,21 @@
+def selectionasc(arr):
+    for i in range(len(arr)):
+        min_idx = i 
+        for j in range(i+1,len(arr)):
+            if arr[j]<arr[min_idx]:
+                min_idx = j
+        arr[i],arr[min_idx] = arr[min_idx],arr[i]
+    return arr
+
+print(selectionasc([5,7,8,4,1,6,9,2]))
+
+def selectiondesc(arr):
+    for i in range(len(arr)):
+        max_idx = i 
+        for j in range(i+1,len(arr)):
+            if arr[j]>arr[max_idx]:
+                max_idx = j
+        arr[i],arr[max_idx] = arr[max_idx],arr[i]
+    return arr
+
+print(selectiondesc([5,7,8,4,1,6,9,2]))
