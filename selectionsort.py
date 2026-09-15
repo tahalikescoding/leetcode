@@ -19,3 +19,16 @@ def selectiondesc(arr):
     return arr
 
 print(selectiondesc([5,7,8,4,1,6,9,2]))
+
+def bubbleasc(arr):
+    swap = False
+    for i in range(len(arr)):
+        for j in range(0,len(arr)-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1] = arr[j+1] , arr[j]
+                swap = True
+        if not swap:
+            return arr
+    return arr
+
+print(bubbleasc([5,7,8,4,1,6,9,2]))
