@@ -11,6 +11,9 @@ class Solution:
                 return True
             while l<r and nums[m] == nums[l] == nums[r]:
                 l+=1
+            m = (l+r)//2
+            if nums[m] == target:
+                return True
             if nums[m]>=nums[l]:
                 if nums[l]<=target<nums[m]:
                     r = m-1
@@ -22,4 +25,5 @@ class Solution:
                 else:
                     r = m-1
         return False
+        
         
