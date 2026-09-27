@@ -14,5 +14,4 @@ class Solution:
             w = (r-l)+1
             longest = max(w,longest)
             seen.add(s[r])
-            r+=1
         return longest
