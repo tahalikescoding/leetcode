@@ -1,0 +1,11 @@
+#LEETCODE 27: REMOVE ELEMENT FROM AN ARRAY
+
+class Solution:
+    def removeElement(self, nums: list[int], val: int) -> int:
+        n = len(nums)
+        i = 0 
+        for j in range(n):
+            if nums[j]!=val:
+                nums[i],nums[j] = nums[j],nums[i]
+                i+=1
+        return i
