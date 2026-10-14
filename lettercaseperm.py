@@ -7,7 +7,7 @@ class Solution:
             return []
         
         if len(s) == 1:
-            return [s,s.upper() if s.islower() else s.lower()]
+            return [s,s.upper() if s.islower() else s.lower()] if s.isalpha() else [s]
 
         res = [""]
         for char in s:
